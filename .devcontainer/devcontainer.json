@@ -31,13 +31,12 @@
         "source=${localEnv:USERPROFILE}/.ssh/id_ed25519_sk.pub,target=/home/openedge/.ssh/id_ed25519_sk.pub,type=bind,consistency=cached,readonly"
     ],
     "containerEnv": {
+        "GIT_CONFIG_COUNT": "1",
+        "GIT_CONFIG_KEY_0": "safe.directory",
+        "GIT_CONFIG_VALUE_0": "/workspaces/${localWorkspaceFolderBasename}",
         "PROPATH": "./src,./bin"
     },
     "forwardPorts": [
-        // no debugger for now 
-        // 3099
     ],
-    // Use 'postCreateCommand' to run commands after the container is created.
-    "postStartCommand": "git config --system --add safe.directory \"$PWD\"",
     "shutdownAction": "none"
 }
