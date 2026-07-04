@@ -26,8 +26,8 @@
         }
     },
     "mounts": [
-        "source=${localEnv:USERPROFILE}/.gitconfig,target=/home/openedge/.gitconfig,type=bind,consistency=cached",
-        "source=${localEnv:USERPROFILE}/.ssh/id_ed25519_sk.pub,target=/home/openedge/.ssh/id_ed25519_sk.pub,type=bind,consistency=cached",
+        "source=${localEnv:USERPROFILE}/.gitconfig,target=/home/openedge/.gitconfig,type=bind,consistency=cached,readonly",
+        "source=${localEnv:USERPROFILE}/.ssh/id_ed25519_sk.pub,target=/home/openedge/.ssh/id_ed25519_sk.pub,type=bind,consistency=cached,readonly",
     ],
     "containerEnv": {
         "PROPATH": "./src,./bin"
