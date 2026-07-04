@@ -25,12 +25,16 @@
             ]
         }
     },
-    "mounts": [],
+    "mounts": [
+        "source=${localEnv:USERPROFILE}/.gitconfig,target=/home/openedge/.gitconfig,type=bind,consistency=cached",
+        "source=${localEnv:USERPROFILE}/.ssh/id_ed25519_sk.pub,target=/home/openedge/.ssh/id_ed25519_sk.pub,type=bind,consistency=cached",
+    ],
     "containerEnv": {
         "PROPATH": "./src,./bin"
     },
     "forwardPorts": [
-        3099
+        // no debugger for now 
+        // 3099
     ],
     // Use 'postCreateCommand' to run commands after the container is created.
     "initializeCommand": "",
