@@ -1,0 +1,17 @@
+{
+	"servers": {
+		"openedge-abl-mcp-server": {
+			"command": "python3",
+			"args": [
+				"/home/openedge/.vscode-server/extensions/progress-software.progress-openedge-mcp-connector-abl-*/resources/mcp-proxy.py",
+				"https://openedge.data.progress.cloud/openedgemcp/connector4abl/mcp",
+				"$OE_MCP_API_KEY"
+			],
+			"env": {
+				"OE_MCP_API_KEY": "${env:OE_MCP_API_KEY}",
+				"PDC_ACCESS_TOKEN": ""
+			}
+		}
+	},
+	"inputs": []
+}

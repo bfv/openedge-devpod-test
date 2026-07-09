@@ -21,7 +21,8 @@
                 "abl.buildMode": 1
             },
             "extensions": [
-                "riversidesoftware.openedge-abl-lsp@prerelease"
+                "riversidesoftware.openedge-abl-lsp@prerelease",
+                "progress-software.progress-openedge-mcp-connector-abl"
             ]
         }
     },
@@ -34,9 +35,10 @@
         "GIT_CONFIG_COUNT": "1",
         "GIT_CONFIG_KEY_0": "safe.directory",
         "GIT_CONFIG_VALUE_0": "/workspaces/${localWorkspaceFolderBasename}",
-        "PROPATH": "./src,./bin"
+        "PROPATH": "./src,./bin",
+        "OE_MCP_API_KEY": "${localEnv:OE_MCP_API_KEY}"
     },
-    "forwardPorts": [
-    ],
+    "forwardPorts": [],
+    "postStartCommand": "cp .vscode/mcp.json.template .vscode/mcp.json",
     "shutdownAction": "none"
 }
