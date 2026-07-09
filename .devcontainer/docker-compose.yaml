@@ -7,7 +7,7 @@ services:
       - ../..:/workspaces:cached
       - /var/run/docker.sock:/var/run/docker.sock
       - ${PROGRESS_CFG}:/usr/dlc/progress.cfg
-    ports:
-      - ${DEBUG_PORT}:3099
+    # ports:
+    #   - ${DEBUG_PORT}:3099
     command: sleep infinity
 
