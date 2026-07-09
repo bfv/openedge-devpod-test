@@ -39,5 +39,6 @@
         "OE_MCP_API_KEY": "${localEnv:OE_MCP_API_KEY}"
     },
     "forwardPorts": [],
+    "postStartCommand": "cp .vscode/mcp.json.template .vscode/mcp.json",
     "shutdownAction": "none"
 }

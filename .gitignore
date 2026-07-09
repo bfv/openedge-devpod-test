@@ -1,4 +1,6 @@
 .builder/
+.vscode/mcp.json
+.vscode/mcp.json.bak
 bin/
 
 *.r
