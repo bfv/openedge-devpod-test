@@ -22,7 +22,8 @@
             },
             "extensions": [
                 "riversidesoftware.openedge-abl-lsp@prerelease",
-                "progress-software.progress-openedge-mcp-connector-abl"
+                "progress-software.progress-openedge-mcp-connector-abl",
+                "vdende.vscode-scratch-playground",
             ]
         }
     },
@@ -39,6 +40,6 @@
         "OE_MCP_API_KEY": "${localEnv:OE_MCP_API_KEY}"
     },
     "forwardPorts": [],
-    "postStartCommand": "cp .vscode/mcp.json.template .vscode/mcp.json",
+    "postStartCommand": "bash .devcontainer/post-start.sh",
     "shutdownAction": "none"
 }

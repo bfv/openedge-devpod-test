@@ -1,6 +1,11 @@
+# dirs
 .builder/
-.vscode/mcp.json
-.vscode/mcp.json.bak
+.scratch/
 bin/
 
+# file types
 *.r
+
+# files
+.vscode/mcp.json
+.vscode/mcp.json.bak
