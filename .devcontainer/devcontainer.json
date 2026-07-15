@@ -2,7 +2,7 @@
     "name": "OpenEdge DevPod Test",
     "dockerComposeFile": "docker-compose.yaml",
     "service": "devcontainer",
-    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "workspaceFolder": "/workspaces/content",
     "features": {
     },
     // Configure tool-specific properties.
